@@ -1,24 +1,12 @@
-import { json } from "stream/consumers";
+export {};
+const deadline: Date = new Date(2024, 9, 10, 11, 45);
 
-export{};
-// const userName: string = "Bob";
-// console.log(`Hi ${userName}!`);
+// 年、月、日、時、分を取得してフォーマット
+const year = deadline.getFullYear();
+const month = String(deadline.getMonth() + 1).padStart(2, '0'); // 月は0から始まるため +1
+const day = String(deadline.getDate()).padStart(2, '0');
+const hours = String(deadline.getHours()).padStart(2, '0');
+const minutes = String(deadline.getMinutes()).padStart(2, '0');
 
-let name: string = "TypeScriptの勉強";
-let priority: number = 3;
-
-console.log(name,priority);
-console.log(`タスク名：${name}、優先度：${priority}`);
-
-// Data型の変数 deadlineの宣言と初期化
-let deadline: Date = new Date(2024, 10, 3, 10, 25);
-console.log(deadline);
-
-// オブジェクト定義
-const todo = {
-    name: "TypeScriptの勉強",
-    priority: 3,
-    deadline: new Date(2024, 10, 3, 10, 25)
-}
-console.log(todo);
-console.log(JSON.stringify(todo, null, 2));
+// フォーマットした文字列をコンソールに出力
+console.log(`${year}/${month}/${day} ${hours}:${minutes}`);
