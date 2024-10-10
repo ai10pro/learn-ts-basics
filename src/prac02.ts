@@ -1,14 +1,6 @@
-// Todo型を定義
-type Todo = {
-    name: string;
-    priority: number;
-    isDone: boolean;
-    deadline: Date;
-
-}
-
+import { Todo } from './types';
 // Todo型のオブジェクトを作成
-const todo1 = {
+const todo1: Todo = {
     name: 'TypeScriptの勉強',
     priority: 3,
     isDone: false,
