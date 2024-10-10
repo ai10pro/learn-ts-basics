@@ -1,4 +1,7 @@
+export {};
 import { Todo } from './types';
+import { printTodo } from './utils/printTodo';
+
 // Todo型のオブジェクトを作成
 const todo1: Todo = {
     name: 'TypeScriptの勉強',
@@ -14,3 +17,6 @@ const todo2: Todo = {
     isDone: false,
     deadline: new Date(2024, 9, 10, 16, 0),
 };
+
+printTodo(todo1);
+printTodo(todo2);
