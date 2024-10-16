@@ -7,5 +7,8 @@
 // console.log('■ prac03.tsの実行');
 // import "./prac03";
 
-console.log('■ comp.tsの実行');
-import "./comp";
+// console.log('■ comp.tsの実行');
+// import "./comp";
+
+console.log('■ prac04.tsの実行');
+import "./prac04";
