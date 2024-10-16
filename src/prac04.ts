@@ -1,12 +1,22 @@
 export {};
 import { Todo } from "./types";
+import { printTodo } from "./utils/printTodo";
 
-const todo1: Todo = {
+const todo: Todo = {
   name: "TypeScriptの勉強",
-  priority: 3,
+  priority: 1,
   isDone: false,
   deadline: new Date(2024, 9, 11, 9, 45),
 };
 
-const state = todo1.isDone ? "【済】" : "【未】"; // 条件演算子
-console.log(`${state}${todo1.name}`);
+// Reactの状態管理に適した
+// todo とは参照は異なる updatedTodo を生成
+const updatedTodo: Todo = {
+    ...todo, // スプレッド構文
+    priority: 3,
+  };
+
+printTodo(todo);
+printTodo(updatedTodo);
+// todo と updatedTodo のtodo の値を参照が「異なること」を確認
+console.log(todo !== updatedTodo); // true であれば OK
