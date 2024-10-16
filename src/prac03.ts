@@ -23,7 +23,7 @@ const todo3: Todo = {
     name: "高専祭ゲームのアセット確認",
     priority: 2,
     isDone: true,
-    deadline: new Date(2024, 9, 10, 16, 0),
+    deadline: new Date(2024, 9, 17, 16, 0),
 };
 
 isTaskOverdue(todo1);
