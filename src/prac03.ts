@@ -15,11 +15,17 @@ const todo1: Todo = {
 const todo2: Todo = {
     name: "基礎物理3の宿題",
     priority: 1,
+    isDone: false,
+    deadline: new Date(2024, 9, 10, 16, 0),
+};
+
+const todo3: Todo = {
+    name: "高専祭ゲームのアセット確認",
+    priority: 2,
     isDone: true,
     deadline: new Date(2024, 9, 10, 16, 0),
 };
 
-printTodo(todo1);
-console.log(isTaskOverdue(todo1));
-printTodo(todo2);
-console.log(isTaskOverdue(todo2));
+isTaskOverdue(todo1);
+isTaskOverdue(todo2);
+isTaskOverdue(todo3);
