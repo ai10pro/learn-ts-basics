@@ -3,6 +3,7 @@ import { Todo } from "./types";
 import { printTodo } from "./utils/printTodo";
 
 const todo: Todo = {
+  id: 1,
   name: "TypeScriptの勉強",
   priority: 1,
   isDone: false,
