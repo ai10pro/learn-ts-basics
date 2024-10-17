@@ -12,3 +12,6 @@
 
 console.log('■ prac04.tsの実行');
 import "./prac04";
+
+console.log('■ imutableObjectTest.tsの実行');
+import "./imutableObjectTest";
