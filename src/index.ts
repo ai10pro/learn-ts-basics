@@ -16,5 +16,8 @@
 // console.log('■ imutableObjectTest.tsの実行');
 // import "./imutableObjectTest";
 
-console.log('■ prac05.tsの実行');
-import "./prac05";
+// console.log('■ prac05.tsの実行');
+// import "./prac05";
+
+console.log('■ prac06.tsの実行');
+import "./prac06";
