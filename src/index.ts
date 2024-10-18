@@ -22,5 +22,8 @@
 // console.log('■ prac06.tsの実行');
 // import "./prac06";
 
-console.log('■ prac07.tsの実行');
-import "./prac07";
+// console.log('■ prac07.tsの実行');
+// import "./prac07";
+
+console.log('■ prac08.tsの実行');
+import "./prac08";
