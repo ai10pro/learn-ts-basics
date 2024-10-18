@@ -4,6 +4,7 @@ import { printTodo } from "./utils/printTodo";
 import assert from "assert";
 
 const todo: Todo = {
+  id: 1,
   name: "Learn TypeScript",
   priority: 3,
   isDone: false,
