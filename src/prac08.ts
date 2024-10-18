@@ -1,7 +1,11 @@
 export{};
+import { initTodos } from "./initTodos";
 
-const numArr: number[] = [1, 2, 3, 4, 5, 6];
-const oddArr: number[] = numArr.filter(num => num % 2 !== 0);
+const updateTodo = initTodos.filter((todo) => !todo.isDone);
+console.log("未完了のTODOリスト");
+console.log(updateTodo);
 
-console.log(numArr); // [1, 2, 3, 4, 5, 6]
-console.log(oddArr); // [1, 3, 5]
+const targetId = 2;
+const deleteTodo = initTodos.filter((todo) => todo.id !== targetId);
+console.log("IDが2のTODOを削除");
+console.log(deleteTodo);
