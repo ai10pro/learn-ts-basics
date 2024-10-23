@@ -31,5 +31,8 @@
 // console.log('■ prac08-ensyu.tsの実行');
 // import "./prac08-ensyu";
 
-console.log('■ prac09.tsの実行');
-import "./prac09";
+// console.log('■ prac09.tsの実行');
+// import "./prac09";
+
+console.log('■ prac09-ensyu.tsの実行');
+import "./prac09-ensyu";
