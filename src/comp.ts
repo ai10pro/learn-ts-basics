@@ -4,6 +4,7 @@ import { deepEqual } from "./utils/deepEqual";
 
 // Todo型のオブジェクトを作成
 const todo1: Todo = {
+    id: 1,
     name: 'TypeScriptの勉強',
     priority: 3,
     isDone: false,
@@ -12,6 +13,7 @@ const todo1: Todo = {
 
 // Todo型のオブジェクトを作成
 const todo2: Todo = {
+    id: 1,
     name: 'TypeScriptの勉強',
     priority: 3,
     isDone: false,
