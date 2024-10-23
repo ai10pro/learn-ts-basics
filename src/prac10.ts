@@ -5,6 +5,7 @@ const dtFmt = "YYYY/MM/DD HH:mm";
 
 const listItemsTodos: string[] = initTodos
   .filter((todo) => !todo.isDone)
+  .sort((a, b) => a.deadline.getTime() - b.deadline.getTime())
   .sort((a, b) => a.priority - b.priority)
   .map(
     (todo) =>
