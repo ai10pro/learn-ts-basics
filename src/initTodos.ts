@@ -35,5 +35,12 @@ export const initTodos: Todo[] = [
     isDone: false,
     priority: 2,
     deadline: new Date(2024, 9, 19, 18, 0),
+  },
+  {
+    id: 6,
+    name: "社会本の要約",
+    isDone: false,
+    priority: 1,
+    deadline: new Date(2024, 9, 19, 9, 0),
   }
 ];
